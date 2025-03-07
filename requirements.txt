@@ -1,0 +1,11 @@
+streamlit
+pandas
+numpy
+requests
+matplotlib
+tensorflow
+scikit-learn
+altair
+folium
+streamlit-folium
+google-generativeai
