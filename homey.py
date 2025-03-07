@@ -349,7 +349,7 @@ else:
         st.header("Water Quality Analysis")
         
         # Path to your water quality analysis file
-        analysis_file_path = r"C:\Users\Nitya\Downloads\River check.py"  # Replace with your actual file path
+        analysis_file_path = "River check.py"  # Replace with your actual file path
         
         # Use the safe import function instead of direct execution
         import_module_content(analysis_file_path)
@@ -361,7 +361,7 @@ else:
         st.header("Submit Your Feedback")
         
         # Path to your feedback form file
-        feedback_file_path = "feedback_form.py"  # Replace with your actual file path
+        feedback_file_path = "feedback.py"  # Replace with your actual file path
         
         # Use the safe import function instead of direct execution
         import_module_content(feedback_file_path)
