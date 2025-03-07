@@ -21,37 +21,37 @@ st.set_page_config(layout="wide")
 GOOGLE_MAPS_API_KEY = 'AIzaSyCAEXog7qWBnXnwlO6wT844mhgaeVAkP00'
 LOCATIONS = {
     'ALAKNANDA A/C WITH BHAGIRATHI AT DEVPRAYAG': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Devprayag_NEW.csv",
+        'file_path': r"Devprayag_NEW.csv",
         'lat': 30.140504,
         'lon': 78.597358
     },
     'GANGA AT HARIDWAR D/S, UPPER GANGA CANAL D/S BALKUMARI MANDIR, AJEETPUR, HARIDWAR ': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Devprayag_NEW.csv",
+        'file_path': r"Haridwar_NEW.csv",
         'lat': 29.945254,
         'lon': 78.164675
     },
     'GANGA AT KANNAUJ U/S (RAJGHAT), U.P': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Kannauj_NEW.csv",
+        'file_path': r"Kannauj_NEW.csv",
         'lat': 27.010953,
         'lon': 79.986442
     },
     'GANGA AT ALLAHABAD D/S (SANGAM), U.P': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\GHAZIPUR_NEW.csv",
+        'file_path': r"GHAZIPUR_NEW.csv",
         'lat': 25.419206,
         'lon': 81.900522
     },
     'GANGA AT TRIGHAT (GHAZIPUR), U.P': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Prayagraj_NEW.csv",
+        'file_path': r"Prayagraj_NEW.csv",
         'lat': 25.578175,
         'lon': 83.609594
     },
     'GANGA AT GULABI GHAT, PATNA': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Patna_NEW.csv",
+        'file_path': r"Patna_NEW.csv",
         'lat': 25.620356,
         'lon': 85.179995
     },
     'KOLKATA, WEST BENGAL ': {
-        'file_path': r"C:\Users\Nitya\Downloads\River Locations\Howrah_NEW.csv",
+        'file_path': r"Howrah_NEW.csv",
         'lat': 22.632682,
         'lon': 88.355369
     }  
@@ -263,15 +263,15 @@ def load_model_for_parameter(parameter):
     Load the pre-trained model for a specific water quality parameter.
     """
     parameter_model_paths = {
-        "Biochemical Oxygen Demand": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Biochemical_Oxygen_Demand_water_quality_lstm_model.keras",
-        "Dissolved Oxygen": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Dissolved_Oxygen_water_quality_lstm_model.keras",
-        "pH": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\pH_water_quality_lstm_model.keras",
-        "Turbidity": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Turbidity_water_quality_lstm_model.keras",
-        "Nitrate": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Nitrate_water_quality_lstm_model.keras",
-        "Fecal Coliform": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Fecal_Coliform_water_quality_lstm_model.keras",
-        "Fecal Streptococci": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Fecal_Streptococci_water_quality_lstm_model.keras",
-        "Total Coliform": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Total_Coliform_water_quality_lstm_model.keras",
-        "Conductivity": r"C:\Users\Nitya\Downloads\Ganga_Project_Labelled\Ganga_Project_Labelled\Ganga_Project\Ganga_Project\models\Conductivity_water_quality_lstm_model.keras"
+        "Biochemical Oxygen Demand": r"Biochemical_Oxygen_Demand_water_quality_lstm_model.keras",
+        "Dissolved Oxygen": r"Dissolved_Oxygen_water_quality_lstm_model.keras",
+        "pH": r"pH_water_quality_lstm_model.keras",
+        "Turbidity": r"Turbidity_water_quality_lstm_model.keras",
+        "Nitrate": r"Nitrate_water_quality_lstm_model.keras",
+        "Fecal Coliform": r"Fecal_Coliform_water_quality_lstm_model.keras",
+        "Fecal Streptococci": r"Fecal_Streptococci_water_quality_lstm_model.keras",
+        "Total Coliform": r"Total_Coliform_water_quality_lstm_model.keras",
+        "Conductivity": r"Conductivity_water_quality_lstm_model.keras"
     }
     model_path = parameter_model_paths.get(parameter)
     
