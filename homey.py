@@ -20,6 +20,7 @@ LOCATIONS = {
     "Allahabad": (25.4358, 81.8463),
     "Ghazipur": (25.5799, 83.5963),
     "Patna": (25.5941, 85.1376),
+    "Kolkata":(22.5744, 88.3629)
 }
 
 def create_ganga_river_map():
