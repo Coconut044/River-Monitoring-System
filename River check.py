@@ -351,7 +351,7 @@ def generate_gemini_water_quality_report(parameter, forecasted_values, forecast_
     
     try:
         # Initialize Gemini model
-        model = genai.GenerativeModel('gemini-2.0-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Generate report
         response = model.generate_content(prompt)
@@ -1153,6 +1153,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
