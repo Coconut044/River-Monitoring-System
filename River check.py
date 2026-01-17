@@ -18,7 +18,7 @@ from matplotlib.patches import Arc
 st.set_page_config(layout="wide")
 
 # Configuration
-GOOGLE_MAPS_API_KEY = 'AIzaSyCAEXog7qWBnXnwlO6wT844mhgaeVAkP00'
+GOOGLE_MAPS_API_KEY = 'AIzaSyAoypTF4C1nwIpFR1VGADMDXhDut8BxJeQ'
 LOCATIONS = {
     'ALAKNANDA A/C WITH BHAGIRATHI AT DEVPRAYAG': {
         'file_path': r"Devprayag_NEW.csv",
@@ -299,7 +299,7 @@ def create_altair_historical_plot(df, parameter):
     
     return chart
 
-GEMINI_API_KEY = 'AIzaSyBuPABtYlGLyyL49Voad_velaxEyokFq1c'  # Replace with your actual API key
+GEMINI_API_KEY = 'AIzaSyAoypTF4C1nwIpFR1VGADMDXhDut8BxJeQ'  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 
 def generate_gemini_water_quality_report(parameter, forecasted_values, forecast_dates, historical_data):
@@ -351,7 +351,7 @@ def generate_gemini_water_quality_report(parameter, forecasted_values, forecast_
     
     try:
         # Initialize Gemini model
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         
         # Generate report
         response = model.generate_content(prompt)
@@ -1153,3 +1153,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
